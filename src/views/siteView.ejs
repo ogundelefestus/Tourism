@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase"><%=site.name%></h2>
+                <p class="item-intro text-muted"><%=site.address%></p>
+                <img class="img-fluid d-block mx-auto" src="<%=site.imageUrls[1]%>" alt="">
+                <p><%=site.description%></p>
+                <ul class="list-inline">
+                  <li>Atrractions: <%=site.attractions%></li>
+                  <li>location: <%=site.location%></li>
+                  <li>Category: <%=site.website%></li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+            </div>
+          </div>
+        </div>
+
+  </body>
+  </html>
