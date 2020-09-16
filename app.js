@@ -13,7 +13,7 @@ const app = express();
 
 // const mysql = require('mysql');
 
-//process.env.NODE_ENV = 'production';
+process.env.NODE_ENV = 'production';
 require('./config/config.js');
 
 mongoose.connect(global.gConfig.database_url, { useNewUrlParser: true, useUnifiedTopology: true })
