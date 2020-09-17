@@ -2,7 +2,6 @@ const express = require('express');
 const authRouter = express.Router();
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcryptjs");
-const chalk = require("chalk");
 
 const debug = require('debug')('app:authRoutes');
 const User = require('../models/users');
@@ -37,7 +36,7 @@ function router() {
     authRouter.route('/')
     .post((req, res, next) => {
       const {email, password} = req.body;
-      debug(chalk.blue(email, password));
+      debug(email, password);
       res.json({ status:true, data: email })
       User.findOne({ email: 'joe@yahoo.com' })
         .then(user => {

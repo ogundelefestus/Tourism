@@ -4,7 +4,6 @@ const mongoose = require('mongoose');
 const debug = require('debug')('app');
 const morgan = require('morgan'); //logger
 const path = require('path');
-const chalk = require('chalk');
 const bodyParser = require('body-parser');
 //const session = require('express-session');
 // const cookieParser = require('cookie-parser');
@@ -61,20 +60,20 @@ app.use('/mailer', mailingRouter);
 //   // // create database
 //   // con.query("CREATE DATABASE lollykrown", function (err, result) {
 //   //   if (err) throw err;
-//   //   debug(chalk.red("Database created", result));
+//   //   debug("Database created", result);
 //   // });
 
 //   // //create table
 //   // const sql = "CREATE TABLE books (title VARCHAR(255), description VARCHAR(255))";
 //   // con.query(sql, function (err, result) {
 //   //   if (err) throw err;
-//   //   console.log(chalk.red("Table created", result));
+//   //   console.log("Table created", result);
 //   // });
 
 //   // const sqll = "INSERT INTO books (title, description) VALUES ('Alchemy', 'my fav book')";
 //   // con.query(sqll, function (err, result) {
 //   //   if (err) throw err;
-//   //   debug(chalk.red("1 record inserted", result));
+//   //   debug("1 record inserted", result);
 //   // });
 
 //     // const sql = "INSERT INTO books (title, description) VALUES ?";
@@ -120,8 +119,8 @@ db.once('open', function () {
     (async function mongo() {
       try {
           // Sites.insertMany(tourists, function(err, docs) {
-          //   if (err) {debug(chalk.red(err))}
-          //   debug(chalk.red(docs.length));
+          //   if (err) {debug(err)}
+          //   debug(docs.length);
           // });
       } catch (err) {
         debug(err.stack);
@@ -135,7 +134,7 @@ app.get('/', (req, res) => {
       const tourSites = await Sites.find({}).exec();
       res.render(
         'index', { title: tourSites });
-      debug(chalk.yellow(tourSites.length));
+      debug(tourSites.length);
     } catch (err) {
       debug(err.stack);
     }

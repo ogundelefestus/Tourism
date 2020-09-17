@@ -3,7 +3,6 @@ const mailingRouter = express.Router();
 const nodemailer = require('nodemailer');
 const cron = require('node-cron');
 const debug = require('debug')('app:mailingRoutes');
-const chalk = require('chalk');
 
 
 function router() {
@@ -37,7 +36,7 @@ function router() {
           //cron.schedule('* * * * *', () => {
             transporter.sendMail(mailOptions, function (err, info) {
               if (err) debug(err);
-              debug(chalk.red(`Email sent: ${info.response}`));
+              debug(`Email sent: ${info.response}`);
               res.json(info);
             })
           //});
