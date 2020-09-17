@@ -20,7 +20,7 @@ function tourController() {
     }
   }
 
-  // create
+  // create new
   function insertOne(req, res) {
     const obj = new Sites(req.body);
     try {

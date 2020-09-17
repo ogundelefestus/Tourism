@@ -7,7 +7,6 @@ const chalk = require("chalk");
 const debug = require('debug')('app:authRoutes');
 const User = require('../models/users');
 
-
 function router() {
   authRouter.route('/signup')
     .post((req, res) => {
