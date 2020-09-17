@@ -26,6 +26,8 @@ app.use(morgan('tiny'))
 
 app.use(express.static(path.join(__dirname, '/public/')));
 app.use('/css', express.static(path.join(__dirname, '/node_modules/bootstrap/dist/css/')));
+// app.use('/css', express.static(path.join(__dirname, '/node_modules/@fortawesome/fontawesome/css/')));
+// app.use('/js', express.static(path.join(__dirname, '/node_modules/@fortawesome/fontawesome/js/')));
 app.use('/js', express.static(path.join(__dirname, '/node_modules/bootstrap/dist/js/')));
 app.use('/js', express.static(path.join(__dirname, '/node_modules/jquery/dist/')));
 app.use('/js', express.static(path.join(__dirname, '/node_modules/jquery.easing/')));
@@ -37,9 +39,7 @@ const touristSitesRouter = require('./src/routes/touristSitesRoutes')(Sites);
 const authRouter = require('./src/routes/authRoutes')();
 const mailingRouter = require('./src/routes/mailingRoutes')();
 
-
 require('./src/controllers/touristSitesController');
-
 
 app.use('/tours', touristSitesRouter);
 app.use('/signin', authRouter);
@@ -141,7 +141,8 @@ app.get('/', (req, res) => {
   })();
 });
 
-app.listen(process.env.PORT ||global.gConfig.node_port, function () {
+// app.listen(process.env.PORT ||global.gConfig.node_port, function () {
+app.listen(global.gConfig.node_port, function () {
   console.log(`${global.gConfig.app_name} Listening on port ${global.gConfig.node_port}...`)
 })
 
