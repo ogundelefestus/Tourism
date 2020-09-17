@@ -16,7 +16,7 @@ const app = express();
 process.env.NODE_ENV = 'production';
 require('./config/config.js');
 
-mongoose.connect(global.gConfig.database_url, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(global.gConfig.database_url, { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false, useCreateIndex: true })
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
