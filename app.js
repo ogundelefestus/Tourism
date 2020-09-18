@@ -142,7 +142,7 @@ app.get('/', (req, res) => {
 });
 
 // app.listen(process.env.PORT ||global.gConfig.node_port, function () {
-app.listen(global.gConfig.node_port, function () {
+app.listen(process.env.PORT || global.gConfig.node_port, function () {
   console.log(`${global.gConfig.app_name} Listening on port ${global.gConfig.node_port}...`)
 })
 

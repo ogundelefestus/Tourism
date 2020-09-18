@@ -13,12 +13,12 @@
   },
   "staging": {
       "config_id": "staging",
-      "node_port": 8080,
+      "node_port": 5000,
       "database_url": "mongodb://localhost:27017/tourist?readPreference=primary&appname=MongoDB%20Compass&ssl=false"
   },
   "production": {
       "config_id": "production",
-      "node_port": 8080,
+      "node_port": 5000,
       "database_url": "mongodb+srv://kay:ololade@tourism-ajbdg.mongodb.net/tourism?retryWrites=true&w=majority"
   }
 }
