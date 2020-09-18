@@ -13,12 +13,12 @@ const requiredStringValidator = [
 const touristsSitesSchema = new mongoose.Schema({
 	name: {
 		type: String,
-    required: true,
+    required: [true, 'Please enter the name of the Tourist site'],
     validate: requiredStringValidator 
   },
 	location: {
 		type: String,
-    required: true,
+    required: [true, 'Please enter the location'],
     validate: requiredStringValidator 
   },
 	address: String,
