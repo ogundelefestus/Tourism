@@ -115,7 +115,7 @@ app.use('/mailer', mailingRouter);
 const db = mongoose.connection
 db.on('error', console.error.bind(console, 'connection error:'))
 db.once('open', function () {
-  console.log('Connected to MongoDB');
+  console.log(`Connected to MongoDB: ${db.host}`);
     (async function mongo() {
       try {
           // Sites.insertMany(tourists, function(err, docs) {
