@@ -18,9 +18,17 @@
   <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- Custom styles for this template -->
   <link href="/css/agency.min.css" rel="stylesheet">
+  <style type="text/css">
+    
+.checked {
+  color: green;
+}
+
+  </style>
 
 </head>
 
@@ -29,7 +37,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Tourism</a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top" style="color: green;">Tourism</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
@@ -37,19 +45,11 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#portfolio">Tour Sites</a>
+            <a class="nav-link js-scroll-trigger" href="#portfolio" style="color: green;">Tour Sites</a>
           </li>
+        
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#services">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#team">Team</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            <a class="nav-link js-scroll-trigger" href="#contact" style="color: green;">Contact</a>
           </li>
         </ul>
       </div>
@@ -60,43 +60,16 @@
   <header class="masthead">
     <div class="container">
       <div class="intro-text">
-        <div class="intro-lead-in">You are Welcome!</div>
-        <div class="intro-heading text-uppercase">Let's take a Tour</div>
-        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#portfolio">Show Me</a>
+        <div class="intro-lead-in" style="color: green;">You are Welcome!</div>
+        <div class="intro-heading text-uppercase" style="color: green;">Let's take a Tour</div>
+        <a class="btn btn-success btn-xl text-uppercase js-scroll-trigger" href="#portfolio">Show Me</a>
       </div>
     </div>
   </header>
   <%- include('partials/portfolio'); -%>
-  <%- include('partials/services'); -%>
-  <%- include('partials/about'); -%>
-  <%- include('partials/team'); -%>
-  <!-- Clients -->
-  <section class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3 col-sm-6">
-          <a href="#">
-            <img class="img-fluid d-block mx-auto" src="img/logos/envato.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <a href="#">
-            <img class="img-fluid d-block mx-auto" src="img/logos/designmodo.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <a href="#">
-            <img class="img-fluid d-block mx-auto" src="img/logos/themeforest.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <a href="#">
-            <img class="img-fluid d-block mx-auto" src="img/logos/creative-market.jpg" alt="">
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
+
+  
+  
 
   <%- include('partials/contact'); -%>
 
@@ -168,6 +141,13 @@
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
                   Close</button>
+
+                  <p>hhdhhd </p>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
               </div>
             </div>
           </div>
@@ -199,9 +179,16 @@
                   <li><strong class="text-warning">LOCATION: </strong> <%=title[1].location%></li>
                   <li><strong class="text-warning">CATEGORY:</strong>: <%=title[1].category%></li>
                 </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                <button class="btn btn-success" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
                   Close</button>
+<p>hhdhhd </p>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+
               </div>
             </div>
           </div>
@@ -236,6 +223,13 @@
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
                   Close</button>
+
+<p>hhdhhd </p>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
               </div>
             </div>
           </div>
@@ -270,6 +264,13 @@
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
                   Close</button>
+
+                  <p>hhdhhd </p>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
               </div>
             </div>
           </div>
@@ -304,6 +305,12 @@
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
                   Close</button>
+                  <p>hhdhhd </p>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
               </div>
             </div>
           </div>
@@ -338,6 +345,13 @@
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
                   Close</button>
+
+                  <p>hhdhhd </p>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
               </div>
             </div>
           </div>
@@ -372,6 +386,13 @@
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fas fa-times"></i>
                     Close</button>
+
+                    <p>hhdhhd </p>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
                 </div>
               </div>
             </div>
@@ -406,6 +427,13 @@
                       <button class="btn btn-primary" data-dismiss="modal" type="button">
                         <i class="fas fa-times"></i>
                         Close</button>
+
+                        <p>hhdhhd </p>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
                     </div>
                   </div>
                 </div>
